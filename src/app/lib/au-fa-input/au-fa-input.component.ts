@@ -1,8 +1,9 @@
-import { Component, Input, OnInit, ContentChild, AfterContentInit, HostBinding } from '@angular/core';
+import { Component, Input, OnInit, ContentChild, AfterContentInit, HostBinding, ViewEncapsulation } from '@angular/core';
 import { InputRefDirective } from '../common/input-ref.directive';
 
 @Component({
   selector: 'au-fa-input',
+  encapsulation: ViewEncapsulation.Emulated,
   templateUrl: './au-fa-input.component.html',
   styleUrls: ['./au-fa-input.component.css']
 })
